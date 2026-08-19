@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python seed.py
 uvicorn app:app --reload
 ```
-Open http://localhost:8000. Never commit secrets. The app includes loading/error/empty-friendly responses and parameterized Cypher.
+Open http://127.0.0.1:8000/. Never commit secrets. The app includes loading/error/empty-friendly responses and parameterized Cypher.
 
 ## Queries
 `queries.cypher` includes a direct skill query and a multi-hop Candidate -> Skill -> RELATED_TO -> Project traversal. The UI ranks projects by matched graph paths and explains each match.
